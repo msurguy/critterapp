@@ -19,7 +19,7 @@
 			@endif
 			{{ Form::text('username', Input::old('username'), array('class' => 'span3', 'placeholder' => 'Username'));}}
 			{{ Form::password('password', array('class' => 'span3', 'placeholder' => 'Password'));}}
-			{{ Form::labelled_checkbox('remember_me', 'Remember Me');}}
+			{{ Form::labelled_checkbox('remember', 'Remember Me');}}
 			{{ Form::submit('Login to Critter', array('class'=>'btn-info'));}}
 			{{ Form::close() }}
 		</div>

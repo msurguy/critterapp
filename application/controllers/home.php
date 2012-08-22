@@ -52,9 +52,12 @@ class Home_Controller extends Base_Controller {
 
 	public function post_login()
 	{
+		
+		$remember = Input::get('remember');
  		$credentials = array(
  			'username' => Input::get('username'), 
- 			'password' => Input::get('password')
+ 			'password' => Input::get('password'),
+ 			'remember' => !empty($remember) ? $remember : null
  		);
  		
     	if (Auth::attempt( $credentials ))
