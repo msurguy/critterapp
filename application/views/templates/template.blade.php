@@ -11,9 +11,6 @@
 
     <link href="./css/font-awesome.css" rel="stylesheet" >
     <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
       .artwork {
         margin-top:30px;
         margin-bottom: 30px;
