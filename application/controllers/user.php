@@ -30,7 +30,7 @@ class User_Controller extends Base_Controller {
 	public function post_index()
 	{
 		$new_critt = array(
-        	'critt'		=> Input::get('new_critt')
+        	'critt'		=> htmlspecialchars(Input::get('new_critt'))
 	    );
 	   
 	    $rules = array(
