@@ -26,6 +26,7 @@
 		<div class="span4">
 			<p class="lead">New to Critter? Sign up!</p>
 			{{ Form::open('/', 'POST',array('class'=>'well')); }}
+			{{ Form::token(); }}
 			{{ $errors->first('name', Alert::error(":message")) }}
 			{{ Form::text('name', Input::old('name'), array('class' => 'span3', 'placeholder' => 'Full Name'));}}
 			{{ $errors->first('username', Alert::error(":message")) }}

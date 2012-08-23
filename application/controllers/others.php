@@ -1,7 +1,7 @@
 <?php
 
 /**
- *  "Others" controller is responsible for showing the 
+ *  "Others" controller is responsible for showing the profiles of other users with info about their profile
  */
 
 class Others_Controller extends Base_Controller {

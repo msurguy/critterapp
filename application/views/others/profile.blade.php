@@ -11,12 +11,14 @@
         <h3>@{{$username;}} </h3> 
         @if ( Auth::user() && ($following == false))
           {{ Form::open('user/follow', 'POST');}}
+          {{ Form::token(); }}
           <input type="hidden" name="id" id="postvalue" value="{{$user_id}}" />
           {{ Form::submit('Follow');}}
           {{ Form::close();}}
         @endif
         @if ( Auth::user() && ($following == true))
           {{ Form::open('user/unfollow', 'POST');}}
+          {{ Form::token(); }}
           <input type="hidden" name="id" id="postvalue" value="{{$user_id}}" />
           {{ Form::submit('Unfollow');}}
           {{ Form::close();}}
