@@ -11,6 +11,7 @@ class Create_Users_Table {
 			$table->string('name');
 			$table->timestamps();
 		});
+		// Add admin user
 		DB::table('users')->insert(array(
 		    'username'  => 'admin',
 		    'password'  => Hash::make('password'),
@@ -18,6 +19,7 @@ class Create_Users_Table {
 		));
 	}
 
+	// on migration rollback drop the users table
 	public function down()
 	{
 		Schema::drop('users');

@@ -10,6 +10,11 @@ class Home_Controller extends Base_Controller {
 	// Since we will use get and post, we need to make controller to be RESTful.
 	public $restful = true;
 
+	public function __construct() 
+    {
+        $this->filter('before', 'csrf')->on('post');
+    }
+
 	/**
 	 *  get_index checks if the user is logged in already, if not, it shows a default home page with options to 
 	 *	login or sign up, if logged in it will show a critter feed from all other users in the system

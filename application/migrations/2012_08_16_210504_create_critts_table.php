@@ -13,6 +13,7 @@ class Create_Critts_Table {
 		});
 	}
 
+	// on migration rollback drop the critts table
 	public function down()
 	{
 		Schema::drop('critts');

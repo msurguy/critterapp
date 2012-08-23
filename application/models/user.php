@@ -1,5 +1,6 @@
 <?php
 
+// A user has many critts and has many and belongs to followers
 class User extends Eloquent 
 {
 	public function critts(){
