@@ -6,7 +6,7 @@
 // Laravel looks at our controllers and knows that "home" controller is responsible for "home" routes, 
 // "others" controller is responsible for "others" route, and etc.
 
-Route::get('others/(:any)', 'others@show');
+Route::any('others/(:any)', 'others@show');
 Route::controller(Controller::detect());
 
 // Everything below this line is default except the Auth filter that basically redirects the user to the login

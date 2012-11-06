@@ -2,7 +2,6 @@
 
 class Base_Controller extends Controller {
 
-	public $data = array();
 	/**
 	 * Catch-all method for requests that can't be matched.
 	 *

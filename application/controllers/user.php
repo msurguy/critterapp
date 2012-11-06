@@ -11,12 +11,7 @@ class User_Controller extends Base_Controller {
 	public function __construct(){
 		$this->filter('before', 'auth');
 	}
-
-	// define the auth filter
-	public function auth(){
-	    	if (Auth::guest()) return Redirect::to_action('home@login');
-	}
-
+	
 	/*
 	* get_index displays a current user's profile with paginated critts and data on critt count 
 	* and followers count

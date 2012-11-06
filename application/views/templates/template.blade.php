@@ -62,7 +62,7 @@
       <hr />
       <div class="row">
         <div class="span12">
-        <p>Critter, a Twitter Clone written in Laravel by <a href="http://twitter.com/msurguy">@msurguy</a> in 10 hours</p>
+        <p>Critter from you.</p>
         </div>
       </div>
     </div>
