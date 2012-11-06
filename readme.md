@@ -1,4 +1,4 @@
-# Critter, A Twitter clone written with [Laravel] in under 10 hours by [@msurguy]
+# Critter, A Twitter like application written with [Laravel] in under 10 hours by [@msurguy]
 
 Imagine Twitter is down again. It's dark outside, and how can you tell everyone about that? 
 Critter to the rescue. Deploy your own Twitter with Laravel and any cloud service, in minutes! 
@@ -7,6 +7,8 @@ Critter to the rescue. Deploy your own Twitter with Laravel and any cloud servic
 It is a PHP/MySQL web application written in Laravel for the purpose of learning. 
 
 The users can register, sign in, post critts, view critts and follow other users.
+
+See working demo at http://critterapp.pagodabox.com
 
 ## How to get this thing running? 
 You have few options:
