@@ -5,11 +5,11 @@ return array(
     'default' => 'production',
     'connections' => array(
         'production' => array(
-            'driver'   => 'mysql',
-            'host'     => $_SERVER['DB1_HOST'],
-            'database' => $_SERVER['DB1_NAME'],
-            'username' => $_SERVER['DB1_USER'],
-            'password' => $_SERVER['DB1_PASS'],
+            'driver'    => 'mysql',
+            'host'      => getenv('db_host'),
+            'database'  => getenv('db_name'),
+            'username'  => getenv('db_username'),
+            'password'  => getenv('db_password'),
             'charset'  => 'utf8',
             'prefix'   => '',
         ))
