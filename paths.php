@@ -24,6 +24,7 @@
 $environments = array(
 
 	'local' => array('*.dev'),
+    'production' => array('*demos.maxoffsky.com*')
 
 );
 
