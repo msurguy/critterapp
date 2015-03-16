@@ -8,7 +8,7 @@ It is a PHP/MySQL web application written in Laravel for the purpose of learning
 
 The users can register, sign in, post critts, view critts and follow other users.
 
-See working demo at http://critterapp.pagodabox.com
+See working demo at http://demos.maxoffsky.com/critter
 
 ## How to get this thing running? 
 You have few options:
