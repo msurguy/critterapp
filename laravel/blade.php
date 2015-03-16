@@ -395,9 +395,9 @@ class Blade {
 	 */
 	protected static function compile_yields($value)
 	{
-		$pattern = static::matcher('yield');
+		$pattern = static::matcher('yield_content');
 
-		return preg_replace($pattern, '<?php echo \\Laravel\\Section::yield$1; ?>', $value);
+		return preg_replace($pattern, '<?php echo \\Laravel\\Section::yield_content$1; ?>', $value);
 	}
 
 	/**

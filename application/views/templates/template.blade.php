@@ -55,7 +55,7 @@
     </div>
     <div class="container">
       <div class="row">
-        @yield('content')
+        @yield_content('content')
       </div>
     </div>
     <div class="container">
